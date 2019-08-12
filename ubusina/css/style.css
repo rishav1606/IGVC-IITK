@@ -59,7 +59,7 @@ ul.nav{
 	padding: 0;
 }
 .navbar-default .navbar-nav>li>a {
- 	font-size: 24px;
+ 	font-size: 20px;
 	color: #000;
 	text-transform: uppercase;
 	transition: all .7s ease 0s;
