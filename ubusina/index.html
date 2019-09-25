@@ -7,13 +7,97 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Team IGVC IITK</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Team Vision IITK</title>
 	<link rel="stylesheet" href="css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:600italic,400,800,700,300' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=BenchNine:300,400,700' rel='stylesheet' type='text/css'>
+
+<style>
+.gallery{
+ box-sizing: border-box;
+}
+
+.blog{
+box-sizing: border-box;
+margin: 40px;
+  font-family: Arial;
+}
+.gallery{
+  margin: 0;
+  font-family: Arial;
+}
+
+.header1{
+  text-align: center;
+  padding: 32px;
+}
+
+.row1{
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column1{
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+.column2{
+  -ms-flex: 50%; /* IE10 */
+  flex: 50%;
+  max-width: 50%;
+  padding: 0 4px;
+}
+
+.column1 img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+.column2 img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+.robot{
+background-image: url("../picture.png");
+
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column1{
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column1{
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+  .column2{
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+</style>
+
 </head>
+
 <body>
 	
 	<!-- ====================================================
@@ -57,9 +141,6 @@
 			</div>
 		</div>
 	</header> <!-- end of header area -->
-
-			
-			
 
 			<section class="slider" id="home">
 				<div class="container-fluid">
@@ -168,49 +249,38 @@
 				</div>
 			</section><!-- end of about section -->
 
-
-					<!-- Daksh section -->
-					<section class="about text-center" id="about">
-							<div class="item">
-					            	<img src="img/slide-four.jpg" alt="">
-					                <div class="carousel-caption">
-				               			<h1>Money</h1>
-				               			<p>good business consulting service</p>
-				               			<button>learn more</button>
-					                </div>
-					            </div>
-						</section><!-- end of Daksh section -->
-
-			<!-- service section starts here -->
-
-			<section class="service text-center" id="service">
+			<!-- robot section starts here -->
+			<section class="service text-center" id="robot">
 				<div class="container">
-					<div class="row">
-						<h2>our services</h2>
-						<h4>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</h4>
-
-						<div class="col-md-3 col-sm-6">
+             					<div class="row">
+						<h2>Meet Daksh</h2>
+						
+						<a href="https://drive.google.com/file/d/1o59BTmK_mio9xBphf2iLvvTs6ftCgaK6/view" target="_blank"><h4>Read the full design report.Click Here</h4></a>
+                        </div>
+                        <div class="row">
+						<div class="col-md-3 col-sm-6" style="align-content: left;">
 							<div class="single-service">
 								<div class="single-service-img">
 									<div class="service-img">
 										<img class="img-responsive" src="img/service1.png" alt="">
 									</div>
 								</div>
-								<h3>Consulting</h3>
+								<h3>switchable vehicle dynamics</h3>
 							</div>
 						</div>
-
-						<div class="col-md-3 col-sm-6">
+                         
+						<div class="col-md-3 col-sm-6" style="align-content: right;">
 							<div class="single-service">
 								<div class="single-service-img">
 									<div class="service-img">
 										<img class="img-responsive" src="img/service2.png" alt="">
 									</div>
 								</div>
-								<h3>Financial</h3>
+								<h3>seamless manual to autonomous mode switching</h3>
 							</div>
 						</div>
-
+					</div>
+           					<div class="row">             
 						<div class="col-md-3 col-sm-6">
 							<div class="single-service">
 								<div class="single-service-img">
@@ -218,7 +288,7 @@
 										<img class="img-responsive" src="img/service3.png" alt="">
 									</div>
 								</div>
-								<h3>Tax Help</h3>
+								<h3>dynamic inverse perspective transform</h3>
 							</div>
 						</div>
 
@@ -229,15 +299,79 @@
 										<img class="img-responsive" src="img/service4.png" alt="">
 									</div>
 								</div>
-								<h3>Money</h3>
+								<h3>LiDAR-based Safety braking</h3>
 							</div>
 						</div>
+
 					</div>
-				</div>
-			</section><!-- end of service section -->
+	</div>
+			</section><!-- end of robot section -->
+
+     <!------Blog Section---->
+     <section class="blog" id="blog">
+        <!-- Header -->
+<div class="header1">
+  <h1>blog</h1>
+</div>    	
+
+     	<div class="row1">
+          <div class="column2">
+         <pre style="width: 100%">
+         <h1>Blog post</h1>
+         	Lorem
+                hjkadhj
+                dfkahd
+                dasfhjd
+                dfahjkh</pre>
+                
+
+          </div>
+           <div class="column2">
+          	  <img src="image.jpeg" style="width: 100%">
+          	  
+          </div>     		
+     	</div>
+
+     </section>
 
 
-			<!-- team section -->
+
+<!-- end of blog section------->
+
+                                <!--------------------start of gallery--->
+<div class="gallery" id="gallery">
+
+<!-- Header -->
+<div class="header1">
+  <h1>Gallery </h1>
+</div>
+
+<!-- Photo Grid -->
+<div class="row1"> 
+  <div class="column1">
+    <img src="image.jpeg" style="width:100%">
+    <img src="image.jpeg" style="width:100%">
+  </div>
+  <div class="column1">
+    <img src="picture.png" style="width:100%">
+    <img src="picture.png" style="width:100%">
+  </div>  
+  <div class="column1">
+    <img src="picture.png" style="width:100%">
+    <img src="picture.png" style="width:100%">
+  </div>  
+  <div class="column1">
+    <img src="picture.png" style="width:100%">
+    <img src="picture.png" style="width:100%">
+  </div>  
+</div>
+ </div>
+
+<!----end of gallery--->
+
+
+
+	     	<!-- team section -->
 
 			<section class="team" id="team">
 				<div class="container">
@@ -322,6 +456,10 @@
 				</div>
 			</section><!-- end of team section -->
 
+
+  
+
+
 			<!-- map section -->
 			<section class="api-map" id="contact">
 				<div class="container-fluid">
@@ -330,6 +468,7 @@
 					</div>
 				</div>
 			</section><!-- end of map section -->
+
 
 			<!-- contact section starts here -->
 			<section class="contact">
@@ -368,6 +507,8 @@
 					</div>
 				</div>
 			</section><!-- end of contact section -->
+
+  
 
 
 			<!-- footer starts here -->
