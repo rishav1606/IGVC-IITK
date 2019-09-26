@@ -16,6 +16,54 @@
 	<link href='http://fonts.googleapis.com/css?family=BenchNine:300,400,700' rel='stylesheet' type='text/css'>
 
 <style>
+.test p{
+	text-align: center;
+	text-decoration: inline;
+
+}
+.test1{
+height: 100px;    
+width: 50%;
+background-color: red;
+margin: 20px; 
+ padding-left: 400px;
+      padding-top: 50px;
+    color: blue;	
+      text-align: center;
+    border: 10px solid blue; 
+    z-index: 1;
+    opacity: 1	;
+    background-color: black;
+}
+	.test2{
+		height: 100px;
+      width: 50%;
+      background-color: blue;
+      display: inline-block;
+      margin-top: -120px;
+      margin-left: 20px;
+      padding-left: 50px;
+      padding-top: 50px;
+      z-index: -1;  
+	}
+.hero-image{
+  background-image: url("back.jpg");
+  background-color: #cccccc;
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text{
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
 .gallery{
  box-sizing: border-box;
 }
@@ -71,8 +119,12 @@ margin: 40px;
 .column2 img {
   margin-top: 8px;
   vertical-align: middle;
-  width: 100%;
 }
+#column2img{
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
 .robot{
 background-image: url("../picture.png");
 
@@ -149,15 +201,15 @@ background-image: url("../picture.png");
 	</header> <!-- end of header area -->
 
 			<section class="slider" id="home">
-				<div class="container-fluid">
-					<div class="row">
+				<div class="container-fluid" >
+					<div class="row" >
 
-					    <div id="carouselHacked" class="carousel slide carousel-fade" data-ride="carousel">
+					    <div id="carouselHacked" class="carousel slide carousel-fade" data-ride="carousel" >
 							<div class="header-backup"></div>
 					        <!-- Wrapper for slides -->
 					        <div class="carousel-inner" role="listbox">
 					            <div class="item active">
-					            	<img src="img/main.jpg" alt="" style="width: 1900px;height: 700px">
+					            	<img src="img/main.jpg" alt="" style="width: 100%;height: 880px">
 					                <div class="carousel-caption">
 				               			<h1>Tax</h1>
 				               			<p>good business consulting service</p>
@@ -166,7 +218,7 @@ background-image: url("../picture.png");
 					            </div>
 					           
 					            <div class="item">
-									<img src="img/banner.jpg" alt="" style="height: 700px;width: 1900px">
+									<img src="img/banner.jpg" alt="" style="height:880px ;width: 100%">
 					                <div class="carousel-caption">
 				               			<h1>Consulting</h1>
 				               			<p>good business consulting service</p>
@@ -207,11 +259,11 @@ background-image: url("../picture.png");
 
 								<div class="about-details">
 									<div class="pentagon-text">
-										<h1>T</h1>
+										<h1>P</h1>
 									</div>
 
-									<h3>Tax Helping</h3>
-									<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer.</p>
+									<h3>PAST RECORD</h3>
+									<p>We debuted in IGVC in 2018 and achieved 5th rank in the design competition and 12th rank overall internationally among 36 teams.</p>
 								</div>
 							</div>
 						</div>
@@ -219,16 +271,16 @@ background-image: url("../picture.png");
 						<div class="col-md-4 col-sm-6">
 							<div class="single-about-detail">
 								<div class="about-img">
-									<img class="img-responsive" src="img/s2.jpg" alt="" style="height: 300px">
+									<img class="img-responsive" src="img/s2.jpg" alt="" style="height: 500px">
 								</div>
 
 								<div class="about-details">
 									<div class="pentagon-text">
-										<h1>B</h1>
+										<h1>L</h1>
 									</div>
 
-									<h3>Business Consulting</h3>
-									<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer.</p>
+									<h3>LEGACY</h3>
+									<p>We were previously the IIT kanpur team for ABU Robocon, where we have achieved 3rd rank nationally among 108 teams.</p>
 								</div>
 							</div>
 						</div>
@@ -242,11 +294,11 @@ background-image: url("../picture.png");
 
 								<div class="about-details">
 									<div class="pentagon-text">
-										<h1>F</h1>
+										<h1>E</h1>
 									</div>
 
-									<h3>Financial Consulting</h3>
-									<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer.</p>
+									<h3>EAGERNESS TO LEARN</h3>
+									<p>We are a group of highly motivated students with a passion for robotics and always try to learn new things through our journey</p>
 								</div>
 							</div>
 						</div>
@@ -258,127 +310,70 @@ background-image: url("../picture.png");
 
                           
                                 <!--------------------start of QUESTION--->
-<div class="question" id="question">
+<div class="question" id="question" style="background-color: #F6F6F6; margin: 40px;">
 
-<!-- Header -->
-<div class="header1">
-  <h1>Question of the week</h1>
-</div>
+     <!------Blog Section---->
+        <!-- Header -->
+		<section class="team" id="team">
+				<div class="container">
+					<div class="row">
+	<div class="team-heading text-center">
+							<h2>Question Of The Week</h2>
+				            
+						</div>
+					</div>
+				</div>
+			</section>	
 
 <!-- Grid -->
-<div class="row1"> 
-  <div class="column3">
-  <pre>
+<div  style="margin: -20px; padding: -20px;"> 
+  <div >
+ <center><p>
   <h1>                               Qejnwdf</h1>
-  f\fjkdmnfm
-  dfjkn
-  dfkaldfdf
-  dfjaklfm.,smdf
-  </pre>
+  f\fjkdmnfm<br>
+  dfjkn<br>
+  dfkaldfdf<br>
+  dfjaklfm.,smdf<br>
+  </p>
+</center>
   </div>
    
-</div>
+</div>	
  </div>
 
 <!----end of Question--->
 
-           <!--------------------start of answer--->
-<div class="answer" id="answer">
-
-				<div class="container">
-					<div class="row">
-							<div class="contact-caption clearfix">
-								<div class="contact-heading text-center">
-									<h2>Sumbit your answer</h2>
-								</div>
-								<div class="col-md-6 col-md-offset-1 contact-form">
-
-									<form class="form">
-										<input class="name" type="text" placeholder="Name">
-										<input class="email" type="email" placeholder="Email">
-										<input class="phone" type="text" placeholder="Phone No:">
-										<textarea class="answer" name="answer" id="answer" cols="30" rows="10" placeholder="Message"></textarea>
-										<input class="submit-btn" type="submit" value="SUBMIT">
-									</form>
-								</div>
-
-							</div>
-					</div>
-				</div>
-	
- </div>
-
-<!----end of answer--->
-
-
-
-
-
-
-			<!-- robot section starts here -->
-			<section class="service text-center" id="robot">
-				<div class="container">
-             					<div class="row">
-						<h2>Meet Daksh</h2>
-						
-						<a href="https://drive.google.com/file/d/1o59BTmK_mio9xBphf2iLvvTs6ftCgaK6/view" target="_blank"><h4>Read the full design report.Click Here</h4></a>
-                        </div>
-                        <div class="row">
-						<div class="col-md-3 col-sm-6" style="align-content: left;">
-							<div class="single-service">
-								<div class="single-service-img">
-									<div class="service-img">
-										<img class="img-responsive" src="img/service1.png" alt="">
-									</div>
-								</div>
-								<h3>switchable vehicle dynamics</h3>
-							</div>
-						</div>
-                         
-						<div class="col-md-3 col-sm-6" style="align-content: right;">
-							<div class="single-service">
-								<div class="single-service-img">
-									<div class="service-img">
-										<img class="img-responsive" src="img/service2.png" alt="">
-									</div>
-								</div>
-								<h3>seamless manual to autonomous mode switching</h3>
-							</div>
-						</div>
-					</div>
-           					<div class="row">             
-						<div class="col-md-3 col-sm-6">
-							<div class="single-service">
-								<div class="single-service-img">
-									<div class="service-img">
-										<img class="img-responsive" src="img/service3.png" alt="">
-									</div>
-								</div>
-								<h3>dynamic inverse perspective transform</h3>
-							</div>
-						</div>
-
-						<div class="col-md-3 col-sm-6">
-							<div class="single-service">
-								<div class="single-service-img">
-									<div class="service-img">
-										<img class="img-responsive" src="img/service4.png" alt="">
-									</div>
-								</div>
-								<h3>LiDAR-based Safety braking</h3>
-							</div>
-						</div>
-
-					</div>
+<section id="robot" style="background-image: url(./img/banner.jpg); height: 1700px; width: 100%; margin-top: 20px; margin-bottom:20px; background-repeat:no-repeat; opacity: 0.9;  ">
+	<h1 style="text-align: center; font-size: 200px; padding-top: 100px; color: white; padding-bottom: 100px;">MEET DAKSH</h1>
+	<h1 style="text-align: center; font-size: 150px; padding-top: 10px; color: white; padding-bottom:100px;"><a href="" >READ THE FULL REPORT.CLICK HERE.</a></h1>
+	<div>
+	<span style="padding-top: 170px; display: inline-block;  height: 300px; width:30%;  margin-left:17%; background-color: white; text-align: center;"><h1 style="font-size: 20px;">switchable vehicle dynamics</h1></span>
+	<span style="padding-top: 170px; text-align: center; display: inline-block;	 height: 300px; width:30%;  margin-left:3%; background-color: white;"><h1 style="font-size: 20px;">seamless manual to autonomous mode switching</h1></span>
+   </div>
+   <div style="margin-top:100px; ">
+	<span style="text-align: center; display: inline-block;  height: 300px; width:30%;  margin-left:17%; background-color: white; padding-top: 170px; "><h1 style="font-size: 20px;">dynamic inverse perspective transform</h1></span>
+	<span style="padding-top: 170px; text-align: center; display: inline-block;	 height: 300px; width:30%;  margin-left:3%; background-color: white;"><h1 style="font-size: 20px;">LiDAR-based Safety braking</h1></span>
 	</div>
-			</section><!-- end of robot section -->
+</section>
+   
+
+
+
+
 
      <!------Blog Section---->
-     <section class="blog" id="blog">
+     <section class="blog" id="blog" style="background-color: #F6F6F6; margin: 10px">
         <!-- Header -->
-<div class="header1">
-  <h1>blog</h1>
-</div>    	
+		<section class="team" id="team">
+				<div class="container">
+					<div class="row">
+	<div class="team-heading text-center">
+							<h2>BLOG</h2>
+				            
+						</div>
+					</div>
+				</div>
+			</section>	
 
      	<div class="row1">
           <div class="column2">
@@ -408,27 +403,39 @@ background-image: url("../picture.png");
 <div class="gallery" id="gallery">
 
 <!-- Header -->
-<div class="header1">
-  <h1>Gallery </h1>
-</div>
+
+			<section class="team" id="team">
+				<div class="container">
+					<div class="row">
+	<div class="team-heading text-center">
+							<h2>Gallery</h2>
+							<br>
+
+                            <h4>A glimpse of the memories that
+    	we have made over the years</h4>
+                            
+						</div>
+					</div>
+				</div>
+			</section>
 
 <!-- Photo Grid -->
 <div class="row1"> 
   <div class="column1">
-    <img src="image.jpeg" style="width:100%">
-    <img src="image.jpeg" style="width:100%">
+    <img src="img/allteam.JPG" style="width:100%">
+    <img src="img/anaywt.jpg" style="width:100%">
   </div>
   <div class="column1">
-    <img src="picture.png" style="width:100%">
-    <img src="picture.png" style="width:100%">
+    <img src="img/bbq.png" style="width:100%">
+    <img src="img/igvc1.jpg" style="width:100%">
   </div>  
   <div class="column1">
-    <img src="picture.png" style="width:100%">
-    <img src="picture.png" style="width:100%">
+    <img src="img/prize.jpg" style="width:100%">
+    <img src="img/rogueone.jpg" style="width:100%">
   </div>  
   <div class="column1">
-    <img src="picture.png" style="width:100%">
-    <img src="picture.png" style="width:100%">
+    <img src="img/usaind.jpg" style="width:100%">
+    <img src="img/y14prize.JPG" style="width:100%">
   </div>  
 </div>
  </div>
@@ -437,21 +444,32 @@ background-image: url("../picture.png");
 
            
                                 <!--------------------start of leaderboard--->
-<div class="leaderboard" id="leaderboard">
+<div class="leaderboard" id="leaderboard" style="background-color: #F6F6F6; margin: 10px;" >
 
-<!-- Header -->
-<div class="header1">
-  <h1>Leaderboard</h1>
-</div>
+     <!------Blog Section---->
+        <!-- Header -->
+		<section class="team" id="team">
+				<div class="container">
+					<div class="row">
+	<div class="team-heading text-center">
+							<h2>LEADERBOARD</h2>
+				            
+						</div>
+					</div>
+				</div>
+			</section>	
 
 <!-- Grid -->
 <div class="row1"> 
   <div class="column3">
-  <pre>
-  <h1>                              1. RIsfda</h1>
-  <h1>                              2.fdjaf</h1>
-  <h1>                              3.fdlfj</h1>
-  </pre>
+ <center><p>
+  <h1>                               Qejnwdf</h1>
+  f\fjkdmnfm<br>
+  dfjkn<br>
+  dfkaldfdf<br>
+  dfjaklfm.,smdf<br>
+  </p>
+</center>
   </div>
    
 </div>
@@ -468,20 +486,20 @@ background-image: url("../picture.png");
 				<div class="container">
 					<div class="row">
 						<div class="team-heading text-center">
-							<h2>our team</h2>
-
-							<h4>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled</h4>
+							<h2>MEET THE TEAM</h2>
+                            <br>
+                            <br>
 						</div>
 
 						<div class="col-md-2 single-member col-sm-4">
 							<div class="person">
-								<img class="img-responsive" src="img/item1.jpg" alt="member-1">
+								<img class="img-responsive" src="img/aalap.jpg" alt="member-1">
 							</div>
 
 							<div class="person-detail">
 								<div class="arrow-bottom"></div>
-								<h3>Mr. Graham</h3>
-								<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, </p>
+								<h3>AALAP SHAH</h3>
+								<p>SLAM, Motion planning & control, mechanical design</p>
 							</div>
 						
 						</div>
@@ -490,44 +508,44 @@ background-image: url("../picture.png");
 
 							<div class="person-detail">
 								<div class="arrow-top"></div>
-								<h3>Mr. David</h3>
-								<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, </p>
+								<h3>HEMANTH BOLLAMREDDI</h3>
+								<p>SLAM, Interoperability Profiles, Electrical Systems</p>
 							</div>
 							<div class="person">
-								<img class="img-responsive" src="img/item2.jpg" alt="member-2">
+								<img class="img-responsive" src="img/hemanth.jpg" alt="member-2">
 							</div>
 						</div>
 						<div class="col-md-2 single-member col-sm-4">
 							<div class="person">
-								<img class="img-responsive" src="img/item3.jpg" alt="member-3">
+								<img class="img-responsive" src="img/harsh.jpg" alt="member-3">
 							</div>
 							<div class="person-detail">
 								<div class="arrow-bottom"></div>
-								<h3>Mr. Hovid</h3>
-								<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, </p>
+								<h3>HARSH SINHA</h3>
+								<p>Mentor - Computer Vision</p>
 							</div>
 						</div>
 
 						<div class="col-md-2 single-member col-sm-4">
 							<div class="person-detail">
 								<div class="arrow-top"></div>
-								<h3>Mr Jasak</h3>
-								<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, </p>
+								<h3>ABHISHEK YADAV</h3>
+								<p>Localization, Computer vision</p>
 							</div>
 							<div class="person">
-								<img class="img-responsive" src="img/item4.jpg" alt="member-4">
+								<img class="img-responsive" src="img/abhishek.jpg" alt="member-4">
 							</div>
 						</div>
 
 						<div class="col-md-2 single-member col-sm-4">
 							<div class="person">
-								<img class="img-responsive" src="img/item5.jpg" alt="member-5">
+								<img class="img-responsive" src="img/vaibhav.jpg" alt="member-5">
 							</div>
 
 							<div class="person-detail">
 								<div class="arrow-bottom"></div>
-								<h3>Mr. Joy Ka</h3>
-								<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, </p>
+								<h3>VAIBHAV AGARWAL</h3>
+								<p>Localization, Electrical Systems</p>
 							</div>
 						</div>
 
@@ -535,11 +553,11 @@ background-image: url("../picture.png");
 
 							<div class="person-detail">
 								<div class="arrow-top"></div>
-								<h3>Mr. Mikari</h3>
-								<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, </p>
+								<h3>VARDHAN GUPTA</h3>
+								<p>Mapping, Mechanical design</p>
 							</div>
 							<div class="person">
-								<img class="img-responsive" src="img/item6.jpg" alt="member-5">
+								<img class="img-responsive" src="img/vardhan.jpg" alt="member-5">
 							</div>
 
 						</div>

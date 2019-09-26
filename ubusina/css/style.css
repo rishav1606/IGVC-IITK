@@ -260,6 +260,7 @@ li a.active{
 	background: url(../img/pattern.jpg);
 	background-repeat: repeat-y;
 	margin-top: 40px;
+	width: 100%;
 }
 .service h2{
 	font-size: 90px;
